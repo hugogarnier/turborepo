@@ -1,9 +1,18 @@
-import React from "react";
+export type ButtonProps = {
+  children: string;
+  variant: "primary" | "secondary";
+};
 
-export const Button: React.FC = () => {
+export const Button = ({ children, variant }: ButtonProps) => {
   return (
-    <button className="w-60 px-3 py-2 rounded drop-shadow-2xl text-white font-bold bg-gradient-to-r from-indigo-400 to-fuchsia-600 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-fuchsia-700 focus:ring-indigo-400 focus:ring-4 focus:ring-offset-2 transition-all duration-200">
-      Let&apos;s get it !
-    </button>
+    <a
+      className={`${
+        (variant === "primary" && "bg-amber-500 hover:bg-slate-600") ||
+        "bg-blue-600 hover:bg-slate-400"
+      } px-5 py-2 text-sm font-medium text-white rounded-lg  transition-all duration-200`}
+      href=""
+    >
+      {children}
+    </a>
   );
 };

@@ -1,5 +1,12 @@
 import Head from "next/head";
-import { Button, Card } from "ui";
+import { Button, Card, Navbar } from "ui";
+
+const menuList = [
+  { title: "Test", href: "#" },
+  { title: "Test", href: "#" },
+  { title: "Test", href: "#" },
+  { title: "Test", href: "#" },
+];
 
 const Web = () => {
   return (
@@ -7,12 +14,28 @@ const Web = () => {
       <Head>
         <title>Web App</title>
       </Head>
+      <div className="">
+        <div className="mx-10">
+          <div className="flex flex-col w-full justify-center m-auto">
+            <Navbar menuList={menuList} />
+            <div className="flex flex-col space-x-3 items-center mt-32">
+              <h1 className="font-bold text-lg">Web</h1>
 
-      <div className="flex w-full min-h-screen justify-center items-center">
-        <div className="flex space-x-3 items-center">
-          <h1 className="font-bold text-lg">Web</h1>
-          <Button />
-          <Card />
+              <Button variant="primary">bla</Button>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+          </div>
         </div>
       </div>
     </>
