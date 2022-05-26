@@ -1,20 +1,9 @@
 import { Button } from "ui";
 
-const Menu = ({ title, href }) => {
-  return (
-    <a
-      className="text-gray-500 hover:text-amber-600 transition-all duration-100"
-      href={href}
-    >
-      {title}
-    </a>
-  );
-};
-
-export const Navbar = ({ menuList }) => {
+export const Navbar = () => {
   return (
     <header
-      className="shadow-sm sticky top-2 w-full backdrop-filter
+      className="shadow-sm sticky top-0 w-full backdrop-filter
         backdrop-blur bg-opacity-50 z-50"
     >
       <div className="max-w-screen-xl p-4 mx-auto">
@@ -24,11 +13,18 @@ export const Navbar = ({ menuList }) => {
           </div>
 
           <nav className="hidden space-x-8 text-sm font-medium md:flex">
-            {menuList.map((menu) => {
-              return (
-                <Menu key={menu.title} title={menu.title} href={menu.href} />
-              );
-            })}
+            <a
+              className="text-gray-500 hover:text-amber-600 transition-all duration-100"
+              href=""
+            >
+              Contact
+            </a>
+            <a
+              className="text-gray-500 hover:text-amber-600 transition-all duration-100"
+              href=""
+            >
+              Blog
+            </a>
           </nav>
 
           <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
