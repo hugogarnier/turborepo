@@ -9,7 +9,7 @@ const Web = () => {
       </Head>
       <div className="flex flex-col w-full justify-center m-auto">
         <div className="flex flex-col space-x-3 items-center mt-10">
-          <h1 className="font-bold text-lg">Web</h1>
+          <h5 className="font-mono font-bold text-xl">Science of Chemstry</h5>
           <Button variant="primary">bla</Button>
           <Card />
           <Card />

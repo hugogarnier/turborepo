@@ -3,7 +3,7 @@ import { Button } from "ui";
 export const Navbar = () => {
   return (
     <header
-      className="shadow-sm sticky top-0 w-full backdrop-filter
+      className="font-serif uppercase shadow-sm sticky top-0 w-full backdrop-filter
         backdrop-blur bg-opacity-50 z-50"
     >
       <div className="max-w-screen-xl p-4 mx-auto">
@@ -12,7 +12,7 @@ export const Navbar = () => {
             <span className="w-20 h-10 bg-gray-200 rounded-lg"></span>
           </div>
 
-          <nav className="hidden space-x-8 text-sm font-medium md:flex">
+          <nav className="hidden space-x-8 text-xl font-medium md:flex">
             <a
               className="text-gray-500 hover:text-amber-600 transition-all duration-100"
               href=""

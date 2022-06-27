@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['"IBM Plex Mono"', ...defaultTheme.fontFamily.mono],
+        mono: ['"Noto Sans Mono"', ...defaultTheme.fontFamily.mono],
+        serif: ['"Ndot 55"', ...defaultTheme.fontFamily.serif],
       },
     },
   },

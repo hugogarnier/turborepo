@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Ndot 55';
+    src: url('Ndot-55.eot');
+    src: url('Ndot-55.eot?#iefix') format('embedded-opentype'),
+        url('Ndot-55.woff2') format('woff2'),
+        url('Ndot-55.woff') format('woff'),
+        url('Ndot-55.ttf') format('truetype'),
+        url('Ndot-55.svg#Ndot-55') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
